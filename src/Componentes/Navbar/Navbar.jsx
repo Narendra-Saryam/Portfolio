@@ -8,6 +8,7 @@ const Navbar = () => {
     <nav className='flex flex-wrap justify-between items-center text-white px-6 pt-6 md:px-20'>
       <span className='text-xl font-bold tracking-wide'>Portfolio</span>
       
+      
       {/* Mobile menu button */}
       <button 
         className='md:hidden absolute right-6 top-6 transition-all duration-300'
