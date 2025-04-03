@@ -4,10 +4,11 @@ import TextChanger from '../Projects/TextChanger'
 
 const Home = () => {
   return (
-    <div className='text-white flex w-full justify-between items-start p-10 md:p-20'>
+    <div id='Home' className='text-white flex w-full justify-between items-start p-20 md:p-20'>
         <div className='md:w-2/4 md:pt-10'>
             <h1 className='text-3xl md:text-6xl font-bold leading-normal tracking-tighter'>
-                <TextChanger />
+                {/* <TextChanger /> */}
+                Hello' I am Narendra
             </h1>
             <p className='text-sm md:text-2xl tracking-tight'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum, natus non voluptatibus.

@@ -5,3 +5,28 @@
 *{
     scroll-behavior: smooth;
 }
+
+/* UnderlineLink.css */
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+    display: inline-block; 
+  }
+  
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%; 
+    background-color: #465697;
+    transition: all 0.3s ease;
+    transform: translateX(-50%); 
+  }
+  
+  .underline-animation:hover::after {
+    width: 100%; 
+    left: 0; 
+    transform: translateX(0); 
+  }
