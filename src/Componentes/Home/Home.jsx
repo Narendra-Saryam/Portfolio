@@ -11,7 +11,7 @@ const Home = () => {
     <div id='Home' className='text-white flex flex-wrap-reverse w-full justify-between items-center p-10 md:p-20'>
         <div className='md:w-2/4 md:pt-10'>
             <motion.h1
-            variants={fadeIn("up",0.2)}
+            variants={fadeIn("down",0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false,amount: 0.7}} 

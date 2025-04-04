@@ -1,13 +1,16 @@
 import React from 'react'
 import image from '/src/assets/n1.jpg'
+import images from '/src/assets/image/n1nobg.png'
 
 const About = () => {
   return (
-    <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-center bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12'>
+    <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-around bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12'>
+         <div className='p-5'>
+            <img className='h-60 md:h-[20rem] rounded-full bg-gradient-to-tr from-black via-[rgba(0,0,0,0.3)] shadow-xl mr-10 hover:scale-105 duration-200' src={images} alt="Hero Image" />
+        </div>
         <div>
             <h2 className='text-2xl md:text-4xl font-bold'>About</h2>
             <div className='md:flex flex-wrap flex-col md:flex-row items-center'>
-                <img className=' h-40 md:h-80' src={image} alt="About Image" />
                 <ul>
                     <div className='flex gap-3 py-4'>
                         <img className='h-4' src={image} alt="" />
