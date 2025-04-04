@@ -1,5 +1,3 @@
-import { delay } from "framer-motion/dom";
-
  export const fadeIn = (direction,delay) =>{
     return{
         hidden: {

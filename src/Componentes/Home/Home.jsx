@@ -1,9 +1,7 @@
 import React from 'react'
 import image from '/src/assets/image/n1nobg.png'
 import TextChanger from '../Projects/TextChanger'
-
 import {motion} from 'framer-motion';
-
 import {fadeIn} from '../variants'
 
 const Home = () => {
