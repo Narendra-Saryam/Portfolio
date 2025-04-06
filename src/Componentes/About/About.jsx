@@ -18,47 +18,74 @@ const About = () => {
             </motion.h2>
             <img className='h-60 md:h-[20rem] rounded-full bg-gradient-to-tr from-black via-[#0000] shadow-xl mr-10 hover:scale-105 duration-200' src={images} alt="Hero Image" />
         </div>
-        <motion.div 
-                    variants={fadeIn("left",0.2)}
+        <div className='md:flex flex-wrap flex-col md:flex-row items-center'>
+            <ul>
+                <div className='md:flex gap-6'>
+                    <motion.div 
+                    variants={fadeIn("down",0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{once: false,amount: 0.7}}>
-            
-            <div className='md:flex flex-wrap flex-col md:flex-row items-center'>
-                <ul>
-                    <div className='flex gap-3 py-4'>
+                    viewport={{once: false,amount: 0.7}}
+                    className='flex gap-3 py-4'>
                         <img className='h-4' src={image} alt="" />
 
                         <span className='w-96'>
                             <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Frontend Developer</h1>
                             <p className='text-sm md:text-md leading-tight'>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas expedita quod neque a reiciendis doloribus id quibusdam voluptatibus consequuntur! Autem ipsam, perspiciatis laudantium asperiores mollitia ullam ratione repellat facere fugiat!
+                            a Frontend Developer who turns designs into fast, accessible web apps using React and TypeScript. I obsess over pixel-perfect UIs, smooth animations, and cutting load times (like that 60% performance boost I delivered).
                             </p>
                         </span>
-                    </div>
-                    <div className='flex gap-3 py-4'>
+                    </motion.div>
+                    <motion.div
+                    variants={fadeIn("left",0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false,amount: 0.7}}
+                    className='flex gap-3 py-4'>
                         <img className='h-4' src={image} alt="" />
 
                         <span className='w-96'>
-                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Backend Developer</h1>
+                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Machine Learning Engineer</h1>
                             <p className='text-sm md:text-md leading-tight'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum esse eum repellat, impedit aliquam sed placeat, consequatur facilis non quia fugiat, atque amet possimus minus exercitationem dicta sunt fuga.
+                            a Machine Learning Engineer passionate about transforming data into intelligent solutions. With expertise in Python, TensorFlow, and NLP, I build predictive models and computer vision systems that drive real-world impact.
                             </p>
                         </span>
-                    </div>
-                    <div className='flex gap-3 py-4'>
+                    </motion.div>
+                </div>
+                <div className='md:flex gap-6'>
+                    <motion.div
+                    variants={fadeIn("right",0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false,amount: 0.7}} 
+                    className='flex gap-3 py-4'>
                         <img className='h-4' src={image} alt="" />
 
                         <span className='w-96'>
-                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Database Developer</h1>
+                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>DSA & Competitive Programming Expert</h1>
                             <p className='text-sm md:text-md leading-tight'>
-                               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quidem delectus, unde maiores itaque repellat in incidunt labore aliquid cupiditate sequi, dolorum voluptates expedita tempora cumque ipsum eligendi veniam temporibus.
+                            a DSA enthusiast who thrives on solving complex problems with elegant code. Ranked in the top 1% on LeetCode, I love optimizing algorithms—whether it’s crafting a pathfinding visualizer or mentoring budding coders.
                             </p>
                         </span>
-                    </div>
-                </ul>
-            </div>
-        </motion.div>
+                    </motion.div>
+                    <motion.div 
+                    variants={fadeIn("up",0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false,amount: 0.7}}
+                    className='flex gap-3 py-4'>
+                        <img className='h-4' src={image} alt="" />
+
+                        <span className='w-96'>
+                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Video/Image Editor</h1>
+                            <p className='text-sm md:text-md leading-tight'>
+                            a visual storyteller wielding Adobe Premiere and After Effects to craft eye-catching content. From viral ad campaigns (5M+ views) to surreal photo manipulations, I blend technical precision with artistic flair.
+                            </p>
+                        </span>
+                    </motion.div>
+                </div>
+            </ul>
+        </div>
     </div>
   )
 }
