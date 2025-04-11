@@ -9,7 +9,7 @@ const About = () => {
     <div id='About' className='text-white md:flex overflow-hidden items-center md:flex-wrap md:justify-around bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12'>
          <div className='flex justify-center items-center flex-col gap-10'>
             <motion.h2 
-             variants={fadeIn("up",0.2)}
+             variants={fadeIn("down",0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false,amount: 0.7}}
@@ -22,7 +22,7 @@ const About = () => {
             <ul>
                 <div className='md:flex gap-6'>
                     <motion.div 
-                    variants={fadeIn("down",0.2)}
+                    variants={fadeIn("up",0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: false,amount: 0.7}}
@@ -37,7 +37,7 @@ const About = () => {
                         </span>
                     </motion.div>
                     <motion.div
-                    variants={fadeIn("left",0.2)}
+                    variants={fadeIn("up",0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: false,amount: 0.7}}
@@ -54,7 +54,7 @@ const About = () => {
                 </div>
                 <div className='md:flex gap-6'>
                     <motion.div
-                    variants={fadeIn("right",0.2)}
+                    variants={fadeIn("up",0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: false,amount: 0.7}} 
