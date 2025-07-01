@@ -3,6 +3,7 @@ import image from '/src/assets/n1.jpg'
 
 const ProjectCard = ({title,main}) => {
   return (
+    
     <div className='p-2 md:p-4 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl'>
         <img className='p-4 h-60' src={image} alt="" />
         <h3 className='px-4 text-xl md:text-2xl font-bold leading-tight'>
