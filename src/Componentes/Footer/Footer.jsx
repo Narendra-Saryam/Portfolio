@@ -18,7 +18,7 @@ const Footer = () => {
     setShowCopy(prev => !prev);
   };
   return (
-    <div id='Footer' className='flex justify-between flex-wrap bg-[#181818] border-[0.05px] border-[#404040] rounded-t-xl text-white p-3 md:p-4 gap-5 items-center'>
+    <div id='Footer' className='flex justify-between flex-wrap bg-gradient-to-tl from-black via-[#181818] to-black border-[0.05px] border-[#404040] rounded-t-xl text-white p-3 md:p-4 gap-5 items-center'>
         <div className='flex gap-2 md:gap-4 items-center'>
             <button onClick={togglePopup} className='text-black py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-lg bg-white'>Contact</button>
             <h3 onClick={togglePopup} className='text-sm md:text-lg font-normal mt-2 underline'>Feel Free To Reach Out</h3>

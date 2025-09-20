@@ -10,7 +10,7 @@ import tailwind_icon from '/src/assets/image/tailwind.png'
 
 const Experience = () => {
   return (
-    <div id='Experience' className='md:p-4 flex flex-col md:flex-row items-center justify-around'>
+    <div  className='md:p-4 flex flex-col md:flex-row items-center justify-around'>
         <div className='flex flex-col rounded-xl'>
             <div className='flex flex-row items-center justify-center gap-4'>
                 <div className='grid grid-cols-2 gap-2 items-center justify-center  text-white'>
@@ -55,7 +55,7 @@ const Experience = () => {
                 </div>
             </div>
         </div>
-        <div className='grid md:grid-cols-2 gap-2 mt-4 md:mt-0'>
+        {/* <div className='grid md:grid-cols-2 gap-2 mt-4 md:mt-0'>
             <div className='flex gap-2 pr-2 bg-[#181818] border-[0.05px] border-[#404040] rounded-lg items-center'>
                 <img className='w-20 md:w-24 rounded-l-lg p-[0.5px] h-full' src={image} alt="" />
                 <span className='text-white'>
@@ -100,7 +100,7 @@ const Experience = () => {
                     </ul>
                 </span>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

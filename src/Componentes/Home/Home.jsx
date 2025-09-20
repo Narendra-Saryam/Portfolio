@@ -25,7 +25,7 @@ const Home = () => {
             className='md:mt-5 text-sm md:text-lg tracking-tight'>
                 I am a MERN Stack Developer, This is my Portfolio it contain all the information about my past activities and knowledge i gain.
             </motion.p>
-            <button className='mt-5 md:mt-10 text-black py-2 px-3 text-sm md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-lg bg-white'><a href="#Footer">Contact Me</a></button>
+            <button id="About" className='mt-5 md:mt-10 text-black py-2 px-3 text-sm md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-lg bg-white'><a href="#Footer">Contact Me</a></button>
         </div>
         <div className='p-5'>
           <img className='h-60 md:h-[34rem] rounded-2xl bg-gradient-to-tl from-black via-[#181818] border-[0.05px] border-[#404040] hover:border-[2px] shadow-xl mr-10' src={image} alt="Hero Image" />
