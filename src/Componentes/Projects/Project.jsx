@@ -10,9 +10,9 @@ import clipboard from '/src/assets/image/clipboard.png'
 
 const Project = () => {
   return (
-    <div id='Projects' className='text-white flex justify-between flex-col md:flex-row w-full p-2 md:p-4 md:px-20'>
-        <div className='flex flex-col p-0 md:p-8'>
-            <div className='flex gap-2 md:gap-4'>
+    <div id='Projects' className='text-white flex justify-center flex-col md:flex-col lg:flex-row w-full p-2 md:p-4 md:px-20'>
+        <div className='flex flex-col p-0 md:p-8 w-full'>
+            <div className='flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 w-full'>
                 <div className='bg-gradient-to-tl from-black via-[#181818] to-black h-60 md:h-80 border-[0.05px] border-[#404040] rounded-xl flex flex-col justify-between'>
                     <img className='h-28 md:h-40 w-full rounded-t-xl p-[0.5px]' src={ifc} alt="" />
                     <h1 className='px-2 w-full'>Iris Flower Classification</h1>
@@ -32,7 +32,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex gap-2 md:gap-4 mt-2 md:mt-4'>
+            <div className='flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 mt-2 md:mt-4 w-full'>
                 <div className='bg-gradient-to-tl from-black via-[#181818] to-black h-60 md:h-80 border-[0.05px] border-[#404040] rounded-xl flex flex-col justify-between'>
                     <img className='h-28 md:h-40 w-full rounded-t-xl p-[0.5px]' src={clipboard} alt="" />
                     <h1 className='px-2 w-full'>Online Clipboard</h1>

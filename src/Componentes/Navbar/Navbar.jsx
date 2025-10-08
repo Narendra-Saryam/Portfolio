@@ -18,9 +18,23 @@ const Navbar = () => {
       }
     };
 
+    // Close menu on scroll or touchmove (useful on mobile when user starts scrolling)
+    let scrollTimeout = null;
+    const handleScrollOrTouch = () => {
+      // debounce quick jitter
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (isMenuOpen) setIsMenuOpen(false);
+      }, 80);
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScrollOrTouch, { passive: true });
+    window.addEventListener('touchmove', handleScrollOrTouch, { passive: true });
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScrollOrTouch);
+      window.removeEventListener('touchmove', handleScrollOrTouch);
     };
   }, [isMenuOpen]);
 
@@ -32,7 +46,7 @@ const Navbar = () => {
         {/* Mobile menu button */}
         <button 
           ref={buttonRef}
-          className='md:hidden absolute right-6 top-4 transition-all duration-300'
+          className='md:hidden absolute right-6 top-2 transition-all duration-300'
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
