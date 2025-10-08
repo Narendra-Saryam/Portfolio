@@ -9,13 +9,44 @@ import { pre } from 'framer-motion/client'
 const Footer = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [showCopy, setShowCopy] = useState(false);
+    const [copied, setCopied] = useState(false);
+
+  // The email address to copy (kept separate from the imported `email` image)
+  const EMAIL_ADDRESS = 'narendrasaryam9459@gmail.com';
 
   const togglePopup = () => {
     setShowPopup(prev => !prev);
   };
 
+  // toggle the copy modal and reset copied state when opening/closing
   const handleCopy = () => {
     setShowCopy(prev => !prev);
+    setCopied(false);
+  };
+
+  // copy email to clipboard with a small fallback for older browsers
+  const copyToClipboard = async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(EMAIL_ADDRESS);
+      } else {
+        // fallback
+        const textarea = document.createElement('textarea');
+        textarea.value = EMAIL_ADDRESS;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setCopied(true);
+      // auto-hide the copied state after 2 seconds
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Copy failed', err);
+    }
   };
   return (
     <div id='Footer' className='flex justify-between flex-wrap bg-gradient-to-tl from-black via-[#181818] to-black border-[0.05px] border-[#404040] rounded-t-xl text-white p-3 md:p-4 gap-5 items-center'>
@@ -49,18 +80,22 @@ const Footer = () => {
             <div className='flex flex-col items-center justify-center gap-3'>
               <div className='flex items-center gap-2'>
                 <img className='w-6' src={email} alt="" />
-                <h1>narendrasaryam9459@gmail.com</h1>
+                <h1>{EMAIL_ADDRESS}</h1>
               </div>
-              <button className='bg-white text-black rounded-sm px-3 p-1'>Copy</button>
+              <div className='flex items-center gap-2'>
+                <button onClick={copyToClipboard} className='bg-white text-black rounded-sm px-3 p-1'>
+                  {copied ? 'Copied!' : 'Copy'}
+                </button>
+              </div>
             </div>            
           </div>
         </div>
         )}
         <div>
             <ul className='flex gap-2 md:gap-4'>
-                <li onClick={handleCopy} className='flex gap-2 items-center'>
-                    <img className='w-6' src={email} alt="" />
-                </li>
+        <li onClick={handleCopy} className='flex gap-2 items-center'>
+          <img onClick={copyToClipboard} className='w-6 cursor-pointer' src={email} alt="" />
+        </li>
                 <li className='flex gap-2 items-center'>
                   <a href='https://www.linkedin.com/in/narendra-saryam/'><img className='w-6' src={linkedin} alt="" /></a>
                 </li>

@@ -7,6 +7,7 @@ import react_icon from '/src/assets/image/reactjs.png'
 import java_icon from '/src/assets/image/java.png'
 import github_icon from '/src/assets/image/github.png'
 import tailwind_icon from '/src/assets/image/tailwind.png'
+import nextjs_icon from '/src/assets/image/nextjs.png'
 
 const Experience = () => {
   return (
@@ -45,8 +46,8 @@ const Experience = () => {
             <div className='flex'>
                 <div className='flex text-white pt-4 w-full justify-between'>
                     <span className='flex flex-col items-center px-4 md:px-14 bg-gradient-to-tl rounded-lg from-black via-[#181818] to-black border-[0.05px] border-[#404040] hover:bg-gradient-to-t hover:scale-105 duration-300'>
-                        <img className='h-20' src={github_icon} alt="" />
-                        <p>NULL</p>
+                        <img className='h-20' src={nextjs_icon} alt="" />
+                        <p>Next JS</p>
                     </span>
                     <span className='flex flex-col items-center px-6 md:px-20 bg-gradient-to-tl rounded-lg from-black via-[#181818] to-black border-[0.05px] border-[#404040] hover:bg-gradient-to-t hover:scale-105 duration-300'>
                         <img className='h-20' src={tailwind_icon} alt="" />
