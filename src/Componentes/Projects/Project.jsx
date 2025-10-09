@@ -4,8 +4,8 @@ import image from '/src/assets/n1.jpg'
 import github from '/src/assets/image/github.png'
 import demo from '/src/assets/image/arrow.png'
 import riskClassification from '/src/assets/image/riskClassification.png'
-import ifc from '/src/assets/image/ifc.png'
-import infoRetrievel from '/src/assets/image/infoRetrievel.png'
+import ifc from '/src/assets/image/IFC.png'
+import infoRetrievel from '/src/assets/image/InfoRetrievel.png'
 import clipboard from '/src/assets/image/clipboard.png'
 
 const Project = () => {
