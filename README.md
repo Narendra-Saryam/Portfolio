@@ -1,11 +1,99 @@
-# React + Vite
+# Portfolio - Next.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern portfolio design with dark theme
+- Responsive layout for mobile and desktop
+- Smooth animations with Framer Motion
+- Sections: Home, About, Experience, Projects, Footer/Contact
+- Optimized images with Next.js Image component
+
+## Tech Stack
+
+- **Next.js 14** - React framework with App Router
+- **React 18** - UI library
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Remix Icons** - Icon library
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Narendra-Saryam/Portfolio.git
+cd portfolio
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── components/
+│   │   ├── About/
+│   │   ├── Experience/
+│   │   ├── Footer/
+│   │   ├── Home/
+│   │   ├── Navbar/
+│   │   ├── Projects/
+│   │   └── variants.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── public/
+│   └── [images]
+├── next.config.js
+├── tailwind.config.js
+└── package.json
+```
+
+## Deployment
+
+This project can be easily deployed to:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- Any platform that supports Next.js
+
+## Author
+
+**Narendra Saryam**
+- LinkedIn: [narendra-saryam](https://www.linkedin.com/in/narendra-saryam/)
+- GitHub: [Narendra-Saryam](https://github.com/Narendra-Saryam)
+- Email: narendrasaryam9459@gmail.com
+
+## License
+
+This project is open source and available under the MIT License.
+
 
 ## Expanding the ESLint configuration
 
