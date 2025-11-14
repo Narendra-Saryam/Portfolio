@@ -1,0 +1,21 @@
+# Narendra Saryam Portfolio - Humans.txt
+
+/* TEAM */
+Developer: Narendra Saryam
+Contact: narendrasaryam9459@gmail.com
+LinkedIn: https://www.linkedin.com/in/narendra-saryam/
+GitHub: https://github.com/Narendra-Saryam
+Location: India
+
+/* SITE */
+Last update: 2024/11/14
+Standards: HTML5, CSS3, JavaScript, React, Next.js
+Components: React, Next.js, Tailwind CSS, Framer Motion
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+
+/* THANKS */
+Built with: Next.js, React, Tailwind CSS, Framer Motion
+Hosted on: Vercel/Netlify
+Icons: Remix Icons

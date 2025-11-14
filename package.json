@@ -1,7 +1,28 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "narendra-saryam-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Narendra Saryam - Professional MERN Stack Developer and Machine Learning Engineer Portfolio",
+  "author": {
+    "name": "Narendra Saryam",
+    "email": "narendrasaryam9459@gmail.com",
+    "url": "https://narendrasaryam.com"
+  },
+  "keywords": [
+    "Narendra Saryam",
+    "portfolio",
+    "MERN Stack Developer",
+    "Machine Learning Engineer",
+    "React Developer",
+    "Next.js",
+    "Full Stack Developer",
+    "Web Developer"
+  ],
+  "homepage": "https://narendrasaryam.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Narendra-Saryam/Portfolio"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,6 +41,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.0",
     "postcss": "^8.5.3",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17"
   }
 }

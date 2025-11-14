@@ -1,0 +1,31 @@
+# https://narendrasaryam.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Allow: /#Home
+Allow: /#About
+Allow: /#Experience
+Allow: /#Projects
+Allow: /#Footer
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Sitemaps
+Sitemap: https://narendrasaryam.com/sitemap.xml
+
+# Block specific paths (if any)
+Disallow: /api/
+Disallow: /_next/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Yahoo specific
+User-agent: Slurp
+Allow: /

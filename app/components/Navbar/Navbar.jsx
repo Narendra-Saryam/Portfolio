@@ -41,8 +41,8 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className='fixed left-0 right-0 z-50 py-2 flex flex-col w-full bg-black bg-opacity-90 shadow-xl'>
-      <nav className='flex flex-wrap justify-between items-center text-white px-6 md:px-10'>
+    <header className='fixed left-0 right-0 z-50 py-2 flex flex-col w-full bg-black bg-opacity-90 shadow-xl'>
+      <nav className='flex flex-wrap justify-between items-center text-white px-6 md:px-10' aria-label="Main navigation">
         <span className='text-xl font-bold tracking-wide'><a className="underline-animation" href="#Home">Portfolio</a></span>
         
         {/* Mobile menu button */}
@@ -50,7 +50,8 @@ const Navbar = () => {
           ref={buttonRef}
           className='md:hidden absolute right-6 top-2 transition-all duration-300'
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <RiCloseLine size={30} /> : <RiMenu2Line size={30} />}
         </button>
@@ -84,7 +85,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

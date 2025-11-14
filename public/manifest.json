@@ -1,0 +1,35 @@
+{
+  "name": "Narendra Saryam - Portfolio",
+  "short_name": "Narendra Saryam",
+  "description": "Narendra Saryam - Professional MERN Stack Developer and Machine Learning Engineer Portfolio. Specializing in React, Next.js, Node.js, Python, and AI technologies.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": ["business", "portfolio", "developer", "technology"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/n1nobg.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/n1nobg.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/n1nobg.webp",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    }
+  ]
+}
