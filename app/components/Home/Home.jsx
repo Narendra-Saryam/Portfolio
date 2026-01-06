@@ -31,14 +31,16 @@ const Home = () => {
             </button>
         </div>
         <div className='p-5'>
-          <Image 
-            className='h-60 md:h-[34rem] w-auto rounded-2xl bg-gradient-to-tl from-black via-[#181818] border-[0.05px] border-[#404040] hover:border-[2px] shadow-xl mr-10' 
-            src="/n1nobg.webp" 
-            alt="Narendra Saryam - MERN Stack Developer and Machine Learning Engineer" 
-            width={544} 
-            height={544} 
-            priority 
-          />
+          <a href="https://www.linkedin.com/in/narendra-saryam/" target="_blank" rel="noopener noreferrer" aria-label="Visit Narendra Saryam's LinkedIn profile">
+            <Image 
+              className='h-60 md:h-[34rem] w-auto rounded-2xl bg-gradient-to-tl from-black via-[#181818] border-[0.05px] border-[#404040] hover:border-[2px] shadow-xl mr-10 cursor-pointer hover:opacity-90 transition-opacity' 
+              src="/n1nobg.webp" 
+              alt="Narendra Saryam - MERN Stack Developer and Machine Learning Engineer" 
+              width={544} 
+              height={544} 
+              priority 
+            />
+          </a>
         </div>
     </section>
   )
