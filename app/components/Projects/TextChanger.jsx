@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 
+const texts = ["Hello Dev I am Nischay", "I'm a Frontend Developer", "Welcome to my Portfolio"];
+
 const TextChanger = () => {
-    const texts = ["Hello Dev I am Nischay", "I'm a Frontend Developer", "Welcome to my Portfolio"];
     const [currentText, setCurrentText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isTyping, setIsTyping] = useState(true);
@@ -34,7 +35,7 @@ const TextChanger = () => {
         }, 100); // Speed of typing/deleting
 
         return () => clearTimeout(timeout);
-    }, [currentIndex, isTyping, currentText, textIndex, texts]);
+    }, [currentIndex, isTyping, currentText, textIndex]);
 
     return (
         <div className='text-4xl font-bold h-16 flex items-center'>

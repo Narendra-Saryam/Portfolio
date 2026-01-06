@@ -93,7 +93,7 @@ const Project = () => {
                         <Image className='w-full h-full object-cover object-center' src="/nagpurWaterQuality.webp" alt="Nagpur Water Quality Monitoring System project screenshot" fill sizes="(max-width: 768px) 100vw, 50vw" />
                     </a>
                     <h3 className='px-2 w-full font-semibold'>Nagpur Water Quality Monitoring System</h3>
-                    <p className='px-2 w-full text-[12px] text-[#949494]'>An interactive GIS-based web application for monitoring and visualizing fluoride and nitrate contamination levels in Nagpur's water supply using geographic mapping technology.</p>
+                    <p className='px-2 w-full text-[12px] text-[#949494]'>An interactive GIS-based web application for monitoring and visualizing fluoride and nitrate contamination levels in Nagpur&apos;s water supply using geographic mapping technology.</p>
                     <div className='p-1 md:p-4 flex items-center justify-center gap-1 md:gap-4'>
                         <a className='px-2 py-1 rounded-sm transition-all duration-200 hover:scale-110 cursor-pointer' href="https://github.com/Narendra-Saryam/fluorideGIS" aria-label="View Project 6 source code on GitHub" rel="noopener noreferrer" target="_blank">
                           <Image className='w-6 h-auto' src="/github.webp" alt="GitHub" width={24} height={24} />
